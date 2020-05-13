@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    
+}
+.glider-contain{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    background-image:linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5))
+}
+
+
+.glider img{
+   height: auto;
+   width: 100%;
+   opacity: 0.8;
+  
+}
+
+
+/* declaring global variable for the color */
+/* :root{
+-- grey-color: #F6F6F3;
+} */
+
+/* setting font size to accomodate different screen sizes */
+html{
+    font-size: 62.5%;
+}
+
+li,a{
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    /* color: white; */
+}
+
+
+header{
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    height: 200px;
+    max-width: 400px;
+    vertical-align: top;
+    z-index: 1;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li, .home, .work, .about, .contactus{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+
+.workcontent > li {
+    padding: 3px;
+    display: block;
+    }
+
+.workcontent  {
+    display: none;
+}
+
+.workcontent a{
+    color: white;
+}
+
+.work:hover + ul, .workcontent:hover {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;    
+}
+
