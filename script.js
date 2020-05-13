@@ -1,8 +1,7 @@
-new Glider(document.querySelector('.glider')),{
-    slideToShow: 1,
-    dots:'#dots',
-    arrows:{
-        prev: 'glider-prev',
-        next: 'glider-next'
-    }
-}
+const carouselSlide = document.querySelector('.glider');
+const carouselImages = document.querySelectorAll('.glider img');
+
+let counter = 1;
+cont size = carouselImages[0].clientWidth;
+
+carouselSlide.getElementsByClassName.transform = 'translateX(' + (-size * counter) + 'px)';
