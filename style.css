@@ -22,16 +22,51 @@
 }
 
 .glider img{
-   opacity: 0.8;
    width: 100%;
    height: 100vh;
+   opacity: 80%;
+   animation: fadeIn ease-out 10s;
+   -webkit-animation: fadeIn ease-out 10s;
+   -moz-animation: fadeIn ease-out 10s;
+   -o-animation: fadeIn ease-out 10s;
+   -ms-animation: fadeIn ease-out 10s;
 }
+    @keyframes fadeIn {
+    0% {opacity:0.01;}
+    50%{opacity: 0.8;}    
+    100% {opacity:0.01;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0.01;}
+    50%{opacity: 0.8;}
+    100% {opacity:0.01;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0.01;}
+    50%{opacity: 0.8;}
+    100% {opacity:0.01;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0.01;}
+    50%{opacity: 0.8;}
+    100% {opacity:0.01;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0.4;}
+    50%{opacity: 0.6;}
+    100% {opacity:0.8;}
+    }
+    
 
 
 /* declaring global variable for the color */
-/* :root{
--- grey-color: #F6F6F3;
-} */
+ :root{
+-- grey_color: #F6F6F3;
+} 
 
 /* setting font size to accomodate different screen sizes */
 html{
@@ -61,7 +96,7 @@ header{
     z-index: 1;
 }
 
-.nav_links {
+.nav_links li {
     list-style: none;
 }
 
@@ -71,26 +106,75 @@ header{
     position: relative;
     color: white;
     text-decoration: none;
+  
 }
 
 
-.workcontent > li {
+.workcontent  li {
     padding: 3px;
     display: block;
-    }
+}
 
 .workcontent  {
     display: none;
+    
 }
 
 .workcontent a{
     color: white;
+    
 }
+.nav_links li::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    transform:scaleX(0);
+    height: 2px;
+    left:0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+.workcontent{
+    box-shadow: 9px 0px 10px -12px rgba(0,0,0,0.73);
+}
+
 
 .work:hover + ul, .workcontent:hover {
     position: absolute;
     left: 20px;
-    top: 40px;
+    top: 50px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    
+   
+}
+
+.nav_links li:hover::before{
+    transform: scale(1);
+    transform-origin: bottom left;
+}
+
+.next, .prev{
+    position: relative;
+    top:80%;
+    left:45%;
+    background: transparent;
+    border:1px solid #F6F6F3;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    padding: 1px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    
+}
+
+.next:hover, .prev:hover{
+    background-color: #F6F6F3; /* Green */
+    color: black;
+    cursor: pointer;
 }
