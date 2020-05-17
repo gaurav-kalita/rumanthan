@@ -4,6 +4,8 @@ const prev = document.querySelector('.prev');
 
 let slideindex = 0;
 
+
+
 const showSlide = () =>{
     for (let index = 0; index < img.length; index++) {
         img[index].style.display = 'none';
@@ -37,7 +39,8 @@ function showSlides(n) {
       slides[i].style.display = "none";  
   }
  
-  slides[slideindex-1].style.display = "block";  
+  slides[slideindex-1].style.display = "block";
+
 
 }
 
