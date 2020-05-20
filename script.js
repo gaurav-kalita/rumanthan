@@ -4,6 +4,7 @@ const prev = document.querySelector('.prev');
 
 let slideindex = 0;
 
+//codes for slide show
 const showSlide = () =>{
     for (let index = 0; index < img.length; index++) {
         img[index].style.display = 'none';
@@ -39,6 +40,8 @@ function showSlides(n) {
   slides[slideindex-1].style.display = "block";
 }
 
+
+
 // Codes for mobile version
 let menuopen = false;
 const burger = document.querySelector('.burger');
@@ -46,13 +49,23 @@ const nav = document.querySelector('.nav_links');
 const cross =  document.querySelector('.cross');
 const logo =  document.querySelector('.logo'); 
 
-//toggle 
+
+// media query to stop auto opening of navbar
+var x = window.matchMedia("(max-width: 900px)")
+if(x.matches){
+(function() {
+    nav.style.display = "none";
+})()};
+
+
+//toggle the hamburger menu
 burger.addEventListener('click', ()=>{
     if(!menuopen){
         nav.classList.toggle('nav-active');
         burger.style.display = 'none';
         cross.style.display = "block";
         menuopen = true;
+        nav.style.display='flex';
     }
     else{
     menuopen = false;
