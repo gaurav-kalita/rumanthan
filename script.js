@@ -4,8 +4,6 @@ const prev = document.querySelector('.prev');
 
 let slideindex = 0;
 
-
-
 const showSlide = () =>{
     for (let index = 0; index < img.length; index++) {
         img[index].style.display = 'none';
@@ -17,7 +15,7 @@ const showSlide = () =>{
         slideindex = 1;
     }
     img[slideindex - 1].style.display = 'block';
-    setTimeout(showSlide, 7500);
+    setTimeout(showSlide, 14000);
 };
 
 showSlide();
@@ -27,7 +25,6 @@ showSlides(slideindex);
 function plusSlides(n) {
   showSlides(slideindex += n);
 }
-
 
 function showSlides(n) {
   var i;
@@ -40,7 +37,36 @@ function showSlides(n) {
   }
  
   slides[slideindex-1].style.display = "block";
-
-
 }
 
+// Codes for mobile version
+let menuopen = false;
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav_links');  
+const cross =  document.querySelector('.cross');
+const logo =  document.querySelector('.logo'); 
+
+//toggle 
+burger.addEventListener('click', ()=>{
+    if(!menuopen){
+        nav.classList.toggle('nav-active');
+        burger.style.display = 'none';
+        cross.style.display = "block";
+        menuopen = true;
+    }
+    else{
+    menuopen = false;
+    }
+});
+
+cross.addEventListener('click', ()=>{
+    if(menuopen){
+        nav.classList.toggle('nav-active');
+        burger.style.display = 'block';
+        cross.style.display = "none";
+        menuopen = false;
+    }
+    else{
+    menuopen = true;
+    }
+});
