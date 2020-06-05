@@ -1,44 +1,23 @@
-const img = document.querySelectorAll('.glider img');
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
-
-let slideindex = 0;
-
-//codes for slide show
-const showSlide = () =>{
-    for (let index = 0; index < img.length; index++) {
-        img[index].style.display = 'none';
-    }
-
-    slideindex++;
-
-    if (slideindex > img.length) {
-        slideindex = 1;
-    }
-    img[slideindex - 1].style.display = 'block';
-    setTimeout(showSlide, 14000);
-};
-
-showSlide();
-
-showSlides(slideindex);
-
-function plusSlides(n) {
-  showSlides(slideindex += n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("img");
- 
-  if (n > slides.length) {slideindex = 1}    
-  else if (n < 1) {slideindex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
- 
-  slides[slideindex-1].style.display = "block";
-}
+// home page slider
+var swiper1 = new Swiper('.swiper1', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  effect: 'fade',
+  keyboard: {
+    enabled: true,
+  },
+  autoplay: {
+    delay: 4000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 
 
@@ -48,7 +27,6 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav_links');  
 const cross =  document.querySelector('.cross');
 const logo =  document.querySelector('.logo'); 
-
 
 // media query to stop auto opening of navbar
 var x = window.matchMedia("(max-width: 900px)")
@@ -83,3 +61,43 @@ cross.addEventListener('click', ()=>{
     menuopen = true;
     }
 });
+
+// swiper for the instagram images
+
+var swiper2 = new Swiper('.swiper2', {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  slidesPerGroup: 1,
+  mode:'horizontal',
+  freeMode: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 3400,
+  },
+  breakpoints: {
+    700: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },},
+  breakpoints: {
+    1400: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+    },}
+});
+
+// codes for instafeed to get image
+
+var galleryfeed = new Instafeed({
+  get: "user",
+  userId: 3250465243,
+  accessToken:"",
+  resolution: "standard_resolution",
+  userHTTP: "true",
+  limit: 6,
+  template: '<img src="{{image}}" class = "img-responsive">',
+  target: "instafeed-gallery",
+});
+
+galleryfeed.run();

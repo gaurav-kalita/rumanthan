@@ -1,0 +1,240 @@
+/* MOBILE VERSION */
+@media screen and (max-width: 900px){
+     body {
+        height: 100%;
+        width: 100%;
+        overflow-x:hidden;
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+    .container{
+        background-color: bisque;
+    }
+    
+
+     .logo{
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        max-width: 150px;
+        z-index: 3;
+    }
+
+    .nav_links{
+        background-color: #F6F6F3;
+        padding: 0%;
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        z-index: 1;
+        right: 0%;
+        top: 0%;
+        opacity: 0.8;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav_links li, .home, .work, .about, .contactus{
+        color: black;
+        text-decoration: none;
+        font-size: 150%;
+    }
+
+    .burger{
+        display: block;
+        position: absolute;
+        right:2%;
+        top: 1%;
+        z-index: 2;
+    }
+
+    .burger:hover>div {
+        background-color: white;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+    .cross{
+        display:none;
+        position: absolute;
+        right:2%;
+        top: 1%;
+        z-index: 2;
+        color: black;
+        cursor: pointer;
+    }
+
+    .workcontent a{
+        color: black;
+        display: flex;
+        justify-content: center;
+        font-size: 100%;
+        justify-content: space-around;
+    }
+
+    .workcontent{
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        z-index: 5;
+        background-color: #F6F6F3;
+        box-shadow: none;
+     }
+
+ 
+    /*second page */
+    .prewedding{
+        display: grid;
+        grid-template-columns:1fr;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 103%;
+    }
+    #pre_1{
+        position: absolute;
+        left: 65%;
+        bottom: 1%;
+    }
+    .pre_img2{
+        margin: auto;
+        display: none;
+    }
+
+    /*third page */
+    .wedding{
+    display: grid;
+    grid-template-columns:1fr;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 238%;
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+  
+    .wedding img{
+        height: auto;
+        width: 100%;
+        padding-right: 10%;
+    }
+
+    section.wedding img:nth-child(2){
+        display: none;
+    }
+
+    section.wedding img:nth-child(3){
+        display: none;
+    }
+
+    .wed_foot{
+        background-color:#F6F6F3;
+        padding-right: 1vh;
+        margin-bottom: 0px;
+        left: 10vh;
+    }
+
+    .wed_text{
+        position: absolute;
+        top: 70vh;
+        right: -1%;
+        display: flex;
+        padding: 1em;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .wed_text p{
+        margin-left: 10px;
+    }
+
+    #pre_2{
+        position: absolute;
+        top: 85vh;
+        left: 50vw;
+    }
+
+    /* fourth page */
+    .maternity{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 334%;
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+
+    section.maternity img:nth-child(2){
+        display: none;
+    }
+
+    section.maternity img:nth-child(3){
+        display: none;
+    }
+    .wed_foot{
+        background-color:#F6F6F3;
+        padding-right: 1vh;
+        margin-bottom: 0px;
+        left: 10vh;
+    }
+
+    .mat_text{
+        position: absolute;
+        right: 2%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 90%;
+    }
+    
+    .mat_text p{
+        margin-left: 10px;
+    }
+
+    #mat_2{
+        position: absolute;
+        top: 106vh;
+        left: 63%;
+    }
+
+    /* fifth page */
+    .baby{
+        display: block;
+        margin-top: 170px;
+    }
+
+    #baby_2{
+        position: absolute;
+        top: 225%;
+        left: 62%;
+        height: 44px;
+    }
+
+    .insta img{
+        height: 5em;
+        width: 10em;
+    }
+    
+
+    /* instagram */
+    .insta{
+       position: absolute;
+       top: 645%;
+       height: 20vh;
+    }
+    
+}
+

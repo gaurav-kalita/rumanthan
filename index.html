@@ -7,7 +7,12 @@
     <meta name="description" content="Best Photography, Videography Site In Assam, India ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mob_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <title>RUMANTHAN</title>
 </head>
 
@@ -16,26 +21,39 @@
       <div class="navbar">
           <header>
             <img class= "logo" src="media\logo.png" alt="logo">
-            <div class="glider-contain">
-                <div class="glider">
-                    <img class="img" src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="">
-                    <img class="img" src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" alt="">
-                    <img class="img" src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt="">
-                 </div>
+            <div class="swiper-container swiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="img" src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt=""></div>
+                  <div class="swiper-slide"> <img class="img" src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" alt=""> </div>
+                  <div class="swiper-slide"> <img class="img" src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt=""> </div>
+                  <div class="swiper-slide"><img class="img" src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt=""></div>
+                  <div class="swiper-slide"> <img class="img" src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" alt=""> </div>
+                  <div class="swiper-slide"> <img class="img" src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img" src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt=""></div>
+                  <div class="swiper-slide"> <img class="img" src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" alt=""> </div>
+                  <div class="swiper-slide"> <img class="img" src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt=""></div>
+                  <div class="swiper-slide"><img class="img" src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
             </div>
                 <div class="navigation">
                     <ul class="nav_links">
-                        <li><a href="home" class="home">Home</a></li>
-                        <li><a href="work" class="work" onclick="return false;">Work &nbsp &#9661;</a>
+                        <li><a href="home" class="home">HOME</a></li>
+                        <li><a href="work" class="work" onclick="return false;">WORK &nbsp &#9661;</a>
                             <ul class="workcontent">
-                                <li><a href="">Pre-Wedding</a><li>
-                                <li><a href="">Wedding</a></li>
-                                <li><a href="">Maternal</a></li>
-                                <li><a href="">Baby</a></li>
+                                <li><a href="#page2">PRE-WEDDING</a><li>
+                                <li><a href="#page3">WEDDING</a></li>
+                                <li><a href="">MATERNAL</a></li>
+                                <li><a href="">BABY</a></li>
                             </ul>
                         </li>
-                        <li><a href="about" class="about">About</a></li>
-                        <li><a href="contactus" class="contactus">Contact Us</a></li>         
+                        <li><a href="about" class="about">ABOUT</a></li>
+                        <li><a href="contactus" class="contactus">CONTACT US</a></li>         
                     </ul>
                         <div class="burger">
                             <div></div>
@@ -45,21 +63,134 @@
                         <div class="cross"> &#10006; </div>
                 </div>
           </header>
-            <div class="buttons">
-                <button class="prev"  onclick="plusSlides(-1)">&#8592;</button>
-                <button class="next" onclick="plusSlides(1)">&#8594;</button> 
-           </div>
       </div>
+    
       <!-- prewedding section -->
+        <div class="content">
+            
+            <section class="prewedding" id="page2">
+                <img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="" class="pre_img1">
+                <div class="pre_text">
+                    <h1>Pre-Wedding</h1>
+                    <p>“To love and be loved is to feel the sun from both sides.” David Viscott</p>
+                </div>
+                <img src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" class="pre_img2" alt="">
+                <div class="pre_button" id="pre_1"> VIEW GALLERY </div>
+            </section>
 
-      <div class="prewedding">
-            <img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="">
-            hgit
+            <section class="wedding" id="page3">
+                <img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="" class="">
+                <img src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" alt="" class="">
+                <img src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt="" class="">
+                <div class="wed_foot">
+                <div class="wed_text">
+                    <h1>WEDDING &nbsp </h1>
+                    <p>“We loved with a love that was more than love.”
+                        – Edgar Allan Poe</p>
+                </div>
+                <div id="pre_2" class="pre_button">VIEW GALLERY</div>
+                </div>
+            </section>
+           
+            <section class="maternity">
+                <img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="" class="">
+                <img src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" alt="" class="">
+                <img src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt="" class="">
+                <div class="mat_foot">
+                    <div class="mat_text">
+                     <h1>MATERNITY</h1>
+                        <p>“Giving birth and being born brings us into the essence of creation, where the human spirit is courageous and bold and the body, a miracle of wisdom.” – Harriette Hartigan</p>
+                     </div>
+                    <div id="mat_2" class="pre_button" > VIEW GALLERY </div>
+                </div>
+            </section>
 
-      </div>
+            <section class="baby">
+                <img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="" class="">
+                <img src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" alt="" class="">
+                <img src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt="" class="">
+                <div class="baby_foot">
+                    <div class="baby_text">
+                        <h1>BABY</h1>
+                        <p>“I love these little people; and it is not a slight thing when they, who are so fresh from God, love us.” Charles Dickens</p>
+                    </div>
+                    <div id="baby_2" class="pre_button" > VIEW GALLERY </div>
+                </div>
+            </section>
 
+            <section class="insta">
+                <div class="insta_update">
+                    <p><a href="www.instagram.com"><img src="media\insta.svg" alt=""></a></p>
+                    <h1>Instagram Updates</h1>
+                    <p>&copy; RUMANTHAN<p></p>
+                </div>
+                <div class="swiper-container swiper2" id="instafeed-gallery">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt="" class=""></div>
+                        <div class="swiper-slide"><img src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg" alt="" class=""></div>
+                        <div class="swiper-slide"><img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="" class=""></div>
+                        <div class="swiper-slide"><img src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt="" class=""></div>
+                        <div class="swiper-slide">  <img src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg"></div>
+                        <div class="swiper-slide">  <img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="" class=""></div>
+                        <div class="swiper-slide">  <img src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg"  alt="" class=""></div>
+                        <div class="swiper-slide">  <img src="media\daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg"></div>
+                        <div class="swiper-slide">  <img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="" class=""></div>
+                        <div class="swiper-slide">  <img src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt="" class=""></div>
+                        <div class="swiper-slide">  <img src="media\christian-diaz-Tg_Du1s-WU0-unsplash.jpg" alt="" class=""></div>
+                        <div class="swiper-slide">  <img src="media\elvis-bekmanis-RXFwMWhcOi0-unsplash - Copy.jpg" alt="" class=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="footer-content">
+                    <div class="links_loc">
+                        <h1>Rumanthan </h1>
+                        <ul>
+                            <li>Dibrugarh</li>
+                            <li>Dist: asasas</li>
+                            <li>Assam</li>
+                            <li>pin 8787788</li>
+                            <li>ph no: 121212</li>
+                        </ul>
+                        <h2>Follow Us On</h2>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <div class="mid_sec">
+                        <img class= "logo2" src="media\logo.png" alt="logo" height="200" width="650">
+                        <div class="links2">
+                            <ul class="nav_links2">
+                                <li><a href="home" class="home">HOME</a></li>
+                                <li><a href="work" class="work" onclick="return false;">WORK &nbsp &#9661;</a>
+                                    <ul class="workcontent">
+                                        <li><a href="#page2">PRE-WEDDING</a><li>
+                                        <li><a href="#page3">WEDDING</a></li>
+                                        <li><a href="">MATERNAL</a></li>
+                                        <li><a href="">BABY</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about" class="about">ABOUT</a></li>
+                                <li><a href="contactus" class="contactus">CONTACT US</a></li>         
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about_end">
+                        <h2>Rumanthan</h2>
+                        <p>What is Rumanthan??? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur laborum magnam quos Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor earum placeat sed iure dolores similique minus nihil expedita tenetur, odit fugiat! Blanditiis ad, dolor dolorum suscipit nesciunt aut reprehenderit totam? </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </div>
-<script src="script.js"></script>
+    
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="instafeed.min.js"></script>
+    <script src="script.js"></script>
+
 
 </body>
 </html>
