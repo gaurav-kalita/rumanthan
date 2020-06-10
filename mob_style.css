@@ -4,18 +4,15 @@
         height: 100%;
         width: 100%;
         overflow-x:hidden;
+        overflow: hidden;
     }
 
     html{
         overflow-x: hidden;
     }
 
-    .container{
-        background-color: bisque;
-    }
     
-
-     .logo{
+    .logo{
         cursor: pointer;
         position: absolute;
         top: 0px;
@@ -91,150 +88,183 @@
         box-shadow: none;
      }
 
- 
-    /*second page */
+   /* who page  */
+    .who{
+        display: block;
+    }
+
+    
+    #who_btn{
+        margin-left: 0%;
+    }
+
+    /* second page */
     .prewedding{
-        display: grid;
-        grid-template-columns:1fr;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 103%;
+        display: block;
+        background-color: white;
+        padding: 0px;
     }
+    .prewedding img{
+        padding: 0px;
+    }
+
     #pre_1{
-        position: absolute;
-        left: 65%;
-        bottom: 1%;
-    }
-    .pre_img2{
-        margin: auto;
-        display: none;
+        margin-left: 0%;
     }
 
-    /*third page */
+    /* third-page */
+    
     .wedding{
-    display: grid;
-    grid-template-columns:1fr;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 238%;
-    margin-right: 0px;
-    margin-left: 0px;
-    }
-  
-    .wedding img{
-        height: auto;
-        width: 100%;
-        padding-right: 10%;
-    }
-
-    section.wedding img:nth-child(2){
-        display: none;
-    }
-
-    section.wedding img:nth-child(3){
-        display: none;
-    }
-
-    .wed_foot{
-        background-color:#F6F6F3;
-        padding-right: 1vh;
-        margin-bottom: 0px;
-        left: 10vh;
+        display: block;
+        padding: 0%;
     }
 
     .wed_text{
-        position: absolute;
-        top: 70vh;
-        right: -1%;
-        display: flex;
-        padding: 1em;
-        justify-content: space-around;
-        flex-direction: row;
-        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 0px;
+        margin: 0px
     }
     
-    .wed_text p{
-        margin-left: 10px;
+    .wedding img{
+        height: auto;
+        width: 100%;
+        padding-left: 0%;
+        padding-top: 2%;
+        padding-right: 0px;
+        margin-right: 0%;
     }
 
-    #pre_2{
-        position: absolute;
-        top: 85vh;
-        left: 50vw;
+    section.wedding img:nth-child(1){
+        height: auto;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 2%;
+        margin-right: 0%;
+    }
+    
+    section.wedding img:nth-child(3){
+        height: auto;
+        width: 100%;
+        padding-left: 0%;
+        padding-top: 2%;
+        margin-right: 0%;
+        padding-right: 0%;
     }
 
-    /* fourth page */
+    /* maternity */
+
     .maternity{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 334%;
-    margin-right: 0px;
-    margin-left: 0px;
+        display: block;
+        padding: 0px;
+        padding-bottom: 10vh;
+    }
+        
+    section.maternity img:nth-child(1){
+        height: auto;
+        width: 100%;
+        padding-left: 0%;
+        padding-top: 2%;
+        margin-right: 0%;
     }
 
     section.maternity img:nth-child(2){
-        display: none;
-    }
-
-    section.maternity img:nth-child(3){
-        display: none;
-    }
-    .wed_foot{
-        background-color:#F6F6F3;
-        padding-right: 1vh;
-        margin-bottom: 0px;
-        left: 10vh;
-    }
-
-    .mat_text{
-        position: absolute;
-        right: 2%;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        width: 90%;
+        width: 100%;
+        height: 70vh;
+        padding-right: 0%;
+        margin-top: 20px;
+        grid-column: 3;
+        grid-row: 1;
     }
     
-    .mat_text p{
-        margin-left: 10px;
-    }
-
-    #mat_2{
-        position: absolute;
-        top: 106vh;
-        left: 63%;
-    }
-
-    /* fifth page */
-    .baby{
+    /* banner */
+    .banner-container{
         display: block;
-        margin-top: 170px;
+       
+    }
+    .banner{
+        display: block;
+        height: auto;
+        width: 100%;
+        
+    }
+        
+    .logo_banner img{
+        height: 20vh;
+        width: auto;
+        padding: 0px;
+        padding-bottom: 0px;
     }
 
-    #baby_2{
-        position: absolute;
-        top: 225%;
-        left: 62%;
-        height: 44px;
+    .logo_banner{
+        padding-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .insta img{
-        height: 5em;
-        width: 10em;
+    .banner1 h1{
+        color: white;
+        font-family: 'Caveat', cursive;
+        font-size: 3vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
-    
 
-    /* instagram */
-    .insta{
-       position: absolute;
-       top: 645%;
-       height: 20vh;
+    .banner1 p{
+        color: white;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 3vh;
+        letter-spacing: 1vh;
+        text-align: start;
     }
-    
+
+    .banner2 h2{
+        color: white;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1vh;
+        justify-content: center;
+        text-align: center;
+    }
+        
+    .banner1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        transform: translateY(45%);
+        transform: translateX(30%);
+        padding: 20px;
+    }
+    .banner2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-top: 100px;
+    }
+
+    .divide1{
+        border-bottom: 2px solid white;
+        height: 18vh;
+        border-left: 0px;
+    }
+    .divide2{
+        border-bottom: 2px solid white;
+        border-left: 0px;
+        height: 18vh;
+        padding: 2vh; 
+    }
+    #ban_2{
+        text-align: center;
+        /* transform: translateX(45%); */
+    }
+
 }
-

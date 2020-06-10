@@ -89,15 +89,18 @@ var swiper2 = new Swiper('.swiper2', {
 
 // codes for instafeed to get image
 
-var galleryfeed = new Instafeed({
-  get: "user",
-  userId: 3250465243,
-  accessToken:"",
-  resolution: "standard_resolution",
-  userHTTP: "true",
-  limit: 6,
-  template: '<img src="{{image}}" class = "img-responsive">',
-  target: "instafeed-gallery",
-});
+// var galleryfeed = new Instafeed({
+//   get: "user",
+//   userId: 3250465243,
+//   accessToken:"",
+//   resolution: "standard_resolution",
+//   userHTTP: "true",
+//   limit: 6,
+//   template: '<img src="{{image}}" class = "img-responsive">',
+//   target: "instafeed-gallery",
+// });
 
-galleryfeed.run();
+// galleryfeed.run();
+
+// Scroll out animation
+AOS.init();

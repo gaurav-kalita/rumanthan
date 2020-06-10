@@ -12,17 +12,11 @@ html{
 }
 
 body{
-    background-color: #F9F6F1;
     overflow-x: hidden;
     min-height: 100%;
 }
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -42,14 +36,17 @@ body{
   }
 
 .swiper1{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* position: absolute; */
     background-image:linear-gradient(
     rgba(0, 0, 0, 2),
     rgba(0, 0, 0, 2))
 } 
+.swiper-slide img{
+     object-fit: cover;
+ }
 
 .swiper-wrapper{
     display: flex;
@@ -64,6 +61,7 @@ body{
 /* setting font size to accomodate different screen sizes */
 html{
     font-size: 62.5%;
+    background-color: #F6F6F3;
 }
 
 li,a{
@@ -71,7 +69,6 @@ li,a{
     font-size: 2.3vh;
     letter-spacing: 3px;
 }
-
 
 header{
     display:flex;
@@ -81,8 +78,8 @@ header{
 .logo{
     cursor: pointer;
     position: absolute;
-    top: 1%;
-    left: 1%;
+    top: 0%;
+    left: 0%;
     margin: 0px;
     padding: 0px;
     height: 10vh;
@@ -134,6 +131,7 @@ header{
 
 .workcontent {
     display: none;
+    box-shadow: 9px 0px 10px -12px rgba(0,0,0,0.73);
 }
 
 .workcontent a{
@@ -152,10 +150,6 @@ header{
     transition: transform 0.3s ease-out;
 }
 
-.workcontent{
-    box-shadow: 9px 0px 10px -12px rgba(0,0,0,0.73);
-}
-
 
 .work:hover + ul, .workcontent:hover{
     position: absolute;
@@ -171,76 +165,123 @@ header{
     transform-origin: bottom left;
 }
 
+/* grid view */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-areas: 
+    "who"
+    "pre_wed"
+    "wed"
+    "banner"
+    "mat"
+    "insta"
+    "footer";
+}
+/* who we are */
+
+.who{
+    grid-area: who;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.who img{
+    grid-column: 1/3;
+    width: auto;
+    height: 95vh;
+    padding: 10%;
+}
+
+.text1{
+    grid-column: 2/span 4;
+    grid-row: 1;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.text1 h2{
+    padding-bottom: 7%;
+    padding-top: 10%;
+    font-size: 6vh;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+.text1 p{
+    font-family: 'Playfair Display SC', serif;
+    padding-bottom: 4%;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+}
+#who_btn{
+    margin-left: 70%;
+}
+
 /* second page */
+
 .prewedding{
-    position: relative;
-    top: 100%;
-    left: 0%;
-    right: 0%;
-    padding-top: 4%;
-    padding-bottom: 3%;
-    padding-left: 6%;
-    padding-right: 6%;
+    grid-area: pre_wed;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2fr, 2fr,1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
- .pre_img1{
+.pre_img1{
     max-width: 100%;
-    height: 100vh;
+    height: 90vh;
     grid-column: 1;
     padding: 2em;
-    padding-bottom: 0em;
     grid-row: 1/ span 3;
-    
-    /* transform: translateX(-100px);
-    transition: transform 2s linear; */
 }
-
-.pre_img1.active{
-    transform: translateX(0px);
-}
-
 
 .pre_text{
     display: flex;
     flex-direction: column;
     font-size: 3vh;
-    padding: 1em;
+    padding: 5vh;
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1/ span 3;
     font-family: 'Playfair Display SC', serif;
+    background-color:#F9F6F1 ;
+    justify-content: space-evenly;
+    background-image: url("media/daniel-suarez-photography-t4mQXex4Peo-unsplash - Copy.jpg");
+    background-position: center;
+    background-blend-mode: overlay; 
 }
 
+.pre_text h1{
+    padding-bottom: 2%;
+    padding-top: 10%;
+    font-size: 6vh;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
 .pre_text p{
-    font-family: 'Dancing Script', cursive;
-    font-size: 4vh;
-    padding-top: 12px;
+    font-family: 'Playfair Display SC', serif;
+    padding-bottom: 4%;
+    padding-right: 10%;
+    padding-left: 10%;
+
 }
 
-.pre_img2{
-    position: absolute;
-    max-width: 100%;
-    height: 70vh;
-    grid-column: 2;
-    grid-row: 2/ span 2;
-    padding: 1em;
-    margin-bottom: -100px;
-    animation: anim1 2s forward ease;
-}  
 
 .pre_button{
     text-align: center;
-    grid-column: 2;
-    grid-row: 4;
     border: 1px solid black;
     background-color: #F6F6F3;
     margin: 1px;
     color: black;
     padding: 8px;
     font-size: 3vh;
-    position: absolute;
     width: 8em;
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
@@ -249,146 +290,67 @@ header{
 }
 
 .pre_button:hover{
-    color: brown;
+    background-color:#5f5f5f ;
+    color: white;
 }
 
 .pre_button p{
     z-index: 1;
 }
 
-.pre_button::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: grey;
-    z-index : -1;
-    transition: 0.8s;
-    border-radius: 0 0 50% 50%;
-    top: 0;
-}
-
-.pre_button:hover::before{
-    height: 180%;
-}
-
-#pre_1{
-    position: absolute;
-    bottom: 60%;
-    left: 70%;
-}
-
 #pre_1:hover{
     background-color:#5f5f5f ;
     color: white;
 }
-
-@keyframes anim1{
-    from{
-        transform: translateY(-120px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes anim1{
-    from{
-        transform: translateY(-120px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@-o-keyframes anim1{
-    from{
-        transform: translateY(-120px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes anim1{
-    from{
-        transform: translateY(-120px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes anim1{
-    from{
-        transform: translateY(-120px);
-        opacity: 0;
-    }
-    to{
-        transform: translateY(0px);
-        opacity: 1;
-    }
+#pre_1{
+    margin-left: 70%;
 }
 
 
 /* third page */
 .wedding{
+    grid-area: wed;
     display: grid;
-    padding-top: 0%;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: absolute;
-    top: 220%;
-}
-
-.wedding img{
-    display: grid;
+    padding-top: 10%;
+    padding-bottom: 10%;
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    
+    background-color: white;
 }
+
 
 section.wedding img:nth-child(1){
-    width: 100%;
-    padding-left: 60px;
-    height: 65vh;
+    height: 80vh;
+    width: 30vw;
     grid-column: 1;
+    padding-left: 20%;
+    padding-top: 20%;
     grid-row: 1;
-}
-
-section.wedding img:nth-child(2){
-    width: 100%;
-    height: 65vh;
-    margin-top: 20px;
-    margin-left: -60px;
-    grid-column: 2;
-    grid-row: 1;
+    margin-right: -200%;
 }
 
 section.wedding img:nth-child(3){
     width: 100%;
-    height: 65vh;
-    margin-top: 40px;
-    margin-left: -80px;
+    height: 70vh;
+    padding-right: 20%;
+    margin-top: 20px;
     grid-column: 3;
     grid-row: 1;
 }
 
+.wed_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 2;
+    font-size: 3vh;
+    background-color: #F6F6F3;
+    padding-left: 10%;
+    margin-left: -20%;
+    z-index: -1;
+}
+
 #pre_2{
-    grid-column: 1;
-    position: absolute;
-    top : 82vh;
-    left: 75%;
-    margin-left: 10vh;
     background-color: #F6F6F3;
 }
 
@@ -397,60 +359,137 @@ section.wedding img:nth-child(3){
     color: white;
 }
 
-.wed_text{
+
+.wed_text p{
+    font-family: 'Playfair Display SC', serif;
+    padding-bottom: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+
+}
+
+.wed_text h1{
+    padding-bottom: 8%;
+    padding-top: 10%;
+    font-size: 6vh;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+
+/* banner */
+.banner-container{
+    grid-area: banner;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("media/logo.png");
+    background-size: cover;
+    background: linear-gradient(7deg, rgba(227,224,220,1) 0%, rgba(221,221,221,1) 99%);
+    background-color: white;
+}
+
+.banner{
+    height: 20vh;
+    width: 100%;
+    /* margin-bottom: 5%; */
+    background-color: white;
+}
+
+.logo_banner{
+    height: 18vh;
+    width: auto;
+}
+
+.banner1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.banner2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.banner1 h1{
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 3vh;
+}
+
+.banner1 p{
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2vh;
+    text-transform: lowercase;
+    position: static;
+    letter-spacing: 1vh;
+}
+
+.banner2 h2{
+    color: white;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 2vh;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    justify-content: space-between;
-    font-size: 3vh;
-    margin-left: 10vh;
-    font-family: 'Playfair Display SC', serif;
-    grid-column: 1/ span 3;
-    top: 80vh;
+    letter-spacing: 1vh;
 }
-.wed_text p{
-    font-family: 'Caveat', cursive;
-    font-size: 4vh;
+
+.divide1{
+    border-left: 2px solid white;
+    height: 18vh;
+    padding: 0vh; 
+}
+.divide2{
+    border-left: 2px solid white;
+    height: 18vh;
+    padding: 0vh; 
 }
 
 /* fourth page */
 
 .maternity{
-    display: grid;
+    grid-area: mat;
     padding: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    position: absolute;
-    top: 320%;
+    padding-top: 5%;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: whitesmoke;
+    grid-template-rows: 1fr 100px;
+    background-color: white;
 }
 
 section.maternity img:nth-child(1){
-    width: 100%;
-    padding: 10px;
-    height: 70vh;
+    height: 80vh;
+    width: 30vw;
     grid-column: 1;
+    padding-left: 20%;
+    padding-top: 20%;
     grid-row: 1;
+    margin-right: -200%;
 }
 
 section.maternity img:nth-child(2){
     width: 100%;
-    padding: 10px;
-    padding-bottom: 10px;
     height: 70vh;
-    grid-column: 2;
+    padding-right: 20%;
+    margin-top: 20px;
+    grid-column: 3;
     grid-row: 1;
 }
 
-section.maternity img:nth-child(3){
-    width: 100%;
-    padding: 10px;
-    padding-bottom: 10px;
-    height: 70vh;
-    grid-column: 3;
-    grid-row: 1/ span 2;
+.mat_text{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 2;
+    font-size: 3vh;
+    background-color: #F6F6F3;
+    padding-left: 10%;
 }
 
 .mat_foot{
@@ -459,9 +498,6 @@ section.maternity img:nth-child(3){
 }
 
 #mat_2{
-    position: absolute;
-    left: 70%;
-    top: 130%;
     background-color: #F6F6F3;
 }
 
@@ -470,12 +506,12 @@ section.maternity img:nth-child(3){
     color: white;
 }
 
-.mat_text{
-    font-size: 3vh;
-    font-family: 'Playfair Display SC', serif;
-    width: 100%;
-    position: absolute;
-    top: 110%;
+.mat_text h1{
+    padding-bottom: 8%;
+    padding-top: 10%;
+    font-size: 6vh;
+    text-align: center;
+    font-family: 'Caveat', cursive;
 }
 
 .mat_text p{
@@ -484,95 +520,33 @@ section.maternity img:nth-child(3){
 }
 
 
-/* fifth page */
-
-.baby{ 
-    display: grid;
-    padding-top: 0%;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: absolute;
-    top: 430%;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows:  1fr;
-    /* background-color:#F6F6F3; */
-    width: 80%;
-    height: 80%;
-}
-
-section.baby img:nth-child(1){
-    width: 100%;
-    padding: 10px;
-    height: 80vh;
-    grid-column: 1/ span 4;
-    grid-row: 1;
-}
-
-section.baby img:nth-child(2){
-    width: 100%;
-    padding: 10px;
-    height: 80vh;
-    grid-column: 5/span 7;
-    grid-row: 1;
-}
-
-section.baby img:nth-child(3){
-    display: none;
-    width: 100%;
-    height: 70vh;
-    grid-column: 7/ span 8;
-    padding: 10px;
-    grid-row: 1;
-}
-
-
-.baby_foot{
-    display: flex;
-    flex-direction: column;
-    grid-row: 3;
-}
-
-#baby_2{
-    position: absolute;
-    left: 82%;
-    top: 14vh;
-    
-}
-
-#baby_2:hover{
-    background-color:#5f5f5f ;
-    color: white;
-}
-
-.baby_text{
-    font-size: 3vh;
-    margin-left: 1vh;
-    font-family: 'Playfair Display SC', serif;
-    width: 100%;
-    position: absolute;
-    }
-
-.baby_text p{
-    font-family: 'Caveat', cursive;
-    font-size: 4vh;
-}
 
 /* sixth page */
-.insta{
-    position: absolute;
-    top: 540%;
-    width: 100%;
-    height: 40%;
+
+.instag{
+    grid-area: insta;
     padding: 0px;
-    background-color:  rgba(22343, 246, 243, 0);
-}
-.insta img{
-    height: 10em;
-    width: 15em;
-    padding: 0px;
+    padding-bottom: 20vh;
+    background-color:  white;
 }
 
-.swiper-slide {
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper2{
+    width: 100vw;
+    height: 30vh;
+}
+
+.insta_img{
+    border-radius: 8px;
+    filter: grayscale(60%);
+    object-fit: contain;
+}
+
+.swiper-slider{
     text-align: center;
     font-size: 18px;
     /* Center slide text vertically */
@@ -588,73 +562,152 @@ section.baby img:nth-child(3){
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    padding: 0px;
 }
 
+
 .insta_update{
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-padding: 1em;
-transform: translateX(10%);
-font-family: 'Playfair Display SC', serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em;
+    padding-left: 20%;
+    font-family: 'Playfair Display SC', serif;
 }
   
-.insta_update p a{
-    font-size: 2px;
+.insta_update p img{
+    height: 2vh;
 }
 
 /* footer */
 .footer{
-    overflow-x: hidden;
     width: 100vw;
-    
+    height: 30vh;
+    grid-area: footer;
 }
 
 .footer-content{
     background-color: #5f5f5f ;
-    position: absolute;
-    top: 580%;
-    height: 70%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-image: linear-gradient(to right top, #f9f6f1, #fbf2ef, #fceff0, #f8edf5, #eeecf9);
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode: difference;
-
+    background-blend-mode: difference; 
 }
 
+.block{
+    border: 1px solid white;
+    width: 11vw;
+    margin: auto;
+    margin-bottom: 2vh;
+}
 
 .links_loc{
     grid-column: 1;
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    position: absolute;
-    top: 100px;
-    font-size: 2em;
-    opacity: 1;
+    font-size: 1vw;
+    padding-top: 30vh;
+    font-family: 'Playfair Display SC', serif;
+    color: white; 
+    letter-spacing: 3px;
+    padding-right: 100px;
+}
+
+.links_loc h2{
+    padding: 2vh;
+    padding-top: 10vh;
+}
+
+.links_loc ul{
+    list-style-type: none;
+}
+
+.links_loc a img{
+    padding-top: 2vh;
+    width: 3vw;
 }
 
 .mid_sec{
     grid-column: 2;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    text-decoration: none;
-    
+    text-decoration: none; 
+    flex-shrink: 2;
+    width: 40vw;
+    transform: translateX(-40px);
 }
+
 .mid_sec ul{
     list-style-type: none;
-    transform: translateY(30%);
+}
+
+
+
+.nav_links2 li a {
+    letter-spacing: 0.4vw;
+}
+
+.workcontent2  li {
+    padding: 3px;
+    display: block;
+    font-size: 1vw;
+}
+
+.workcontent2 {
+    display: none; 
+    background-color: #9d9091;
+    z-index: 1000;
+    position: relative;
+    bottom: 50px;
+}
+
+.workcontent2 a{
+    color: white;
+    
+}
+
+.workcontent2:hover{
+    display: flex;
+    flex-direction: column; 
+    color: white;
+}
+
+#wrkc{
+  padding: 20px;
 }
 
 .mid_sec img{
     text-align: center;
     list-style-type: none;
+    width: 53vw;
 }
+
 .about_end{
     grid-column: 3;
-   
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1vw;
+    opacity: 1;
+    padding: 2vw;
+    padding-top: 27vh;
+    padding-bottom: 2px;
+    font-family: 'Playfair Display SC', serif;
+    color: white; 
+    letter-spacing: 3px;
+    transform: translateX(-2vw);
+}
+
+.fotlink a img{
+    height: 5vh;
+}
+.about_end h2{
+    padding: 1vh;
 }
