@@ -95,7 +95,7 @@
 
     
     #who_btn{
-        margin-left: 0%;
+        margin-left: 10%;
     }
 
     /* second page */
@@ -104,12 +104,13 @@
         background-color: white;
         padding: 0px;
     }
+
     .prewedding img{
         padding: 0px;
     }
 
     #pre_1{
-        margin-left: 0%;
+        margin-left: 10%;
     }
 
     /* third-page */
@@ -133,6 +134,10 @@
         padding-top: 2%;
         padding-right: 0px;
         margin-right: 0%;
+    }
+
+    #pre2{
+        margin-left: 10%;
     }
 
     section.wedding img:nth-child(1){
@@ -178,6 +183,9 @@
         grid-row: 1;
     }
     
+    #mat_2{
+        margin-right: 0%;
+    }
     /* banner */
     .banner-container{
         display: block;
