@@ -19,6 +19,24 @@ var swiper1 = new Swiper('.swiper1', {
   },
 });
 
+// sticky nav-bar
+  window.addEventListener("scroll", function(){
+
+    var header = document.querySelector(".navi");
+    var links = document.querySelectorAll('.home, .work,.about,.contactus,.workcontent li,.workcontent a');
+    console.log(links);
+    // var workli = document.querySelectorAll('.workli');
+    var log = document.querySelector(".logo")
+
+    header.classList.toggle("navi-active", window.scrollY > 300);
+
+    links.forEach(myfunction);
+    function myfunction(items){
+    items.classList.toggle("navi-active2", window.scrollY > 300);
+
+  }
+  })
+
 
 
 // Codes for mobile version
