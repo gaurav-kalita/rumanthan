@@ -106,9 +106,18 @@
         margin-left: 10%;
     }
 
+        
+    .who img{
+        grid-column: 1/3;
+        width: 100vw;
+        height: auto;
+        padding: 10%;
+    }
+
     /* second page */
     .prewedding{
-        display: block;
+        display: flex;
+        flex-direction: column;
         background-color: white;
         padding: 0px;
     }
@@ -116,6 +125,14 @@
     .prewedding img{
         padding: 0px;
         object-fit: fill;
+    }
+
+    .pre_img1{
+        max-width: 100%;
+        height: auto;
+        grid-column: 1;
+        padding: 2em;
+        grid-row: 1/ span 3;
     }
 
 
@@ -215,7 +232,9 @@
     .banner-container{
         display: flex;
         flex-direction: column;
-        height: auto;  
+        height: auto;
+        justify-content: center; 
+        align-items: center;
     }
 
     .banner{
@@ -226,18 +245,11 @@
     }
         
     .logo_banner img{
-        height: 20vh;
-        width: 100%;
-        padding: 0px;
-        padding-bottom: 0px;
+        display: none;
     }
 
-    .logo_banner{
-        width: 100%;
-        padding-bottom: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #logobanner{
+        display: none;
     }
 
     .banner1 h1{
@@ -259,7 +271,7 @@
     }
 
     .banner2 h2{
-        color: white;
+        color: black;
         font-family: 'Playfair Display SC', serif;
         font-size: 3vh;
         display: flex;
@@ -267,6 +279,7 @@
         letter-spacing: 1vh;
         justify-content: center;
         text-align: center;
+        margin-top: -10vh;
     }
         
     .banner1{
@@ -274,9 +287,9 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        padding: 20px;
-        width: 100%;
-        margin-bottom: 1%;
+        padding: 0px;
+        margin-bottom: 0%;
+        margin-top: -30%;
     }
 
     .banner2{
@@ -289,19 +302,18 @@
     }
 
     .divide1{
-        border-bottom: 2px solid white;
-        height: 18vh;
-        border-left: 0px;
+        display: none;
     }
 
     .divide2{
-        border-bottom: 2px solid white;
-        border-left: 0px;
-        height: 18vh;
-        padding: 2vh; 
+        display: none; 
     }
+
     #ban_2{
         text-align: center;
+        transform: translateX(40%);
+        margin-top: 10px;
+        margin-bottom: 30px;
     }
     
     /* instagram */
@@ -363,7 +375,7 @@
     }
     
     .links_loc a img{
-        padding-top: 0vh;
+        padding-top: 1vh;
         width: 5vw;
         padding-bottom: 2vh;
     }
