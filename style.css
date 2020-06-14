@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    overflow-x: hidden;
+    overflow-x: visible;
     min-height: 100%;
     padding: 0;
     margin: 0;
