@@ -635,7 +635,7 @@ section.maternity img:nth-child(2){
       box-sizing: border-box;
       width: 100%;
       text-align: left;
-      font: bold 16px sans-serif;
+      font: bold 2vh sans-serif;
       padding: 55px 50px;
   }
   
@@ -656,7 +656,7 @@ section.maternity img:nth-child(2){
   
   .footer-distributed h3{
       color:  #ffffff;
-      font: normal 36px 'Open Sans', cursive;
+      font: normal 2vh 'Open Sans', cursive;
       margin: 0;
   }
   
@@ -675,14 +675,14 @@ section.maternity img:nth-child(2){
   .footer-distributed .footer-links a{
       display:inline-block;
       line-height: 1.8;
-    font-weight:400;
+      font-weight:400;
       text-decoration: none;
       color:  inherit;
   }
   
   .footer-distributed .footer-company-name{
       color:  #222;
-      font-size: 50px;
+      font-size: 2vh;
       font-weight: normal;
       margin: 0;
   }
@@ -696,19 +696,19 @@ section.maternity img:nth-child(2){
   .footer-distributed .footer-center i{
       background-color:  #33383b;
       color: #ffffff;
-      font-size: 50px;
-      width: 100px;
-      height: 100px;
+      font-size: 2vh;
+      width: 4vh;
+      height: 4vh;
       border-radius: 50%;
       text-align: center;
-      line-height: 100px;
+      line-height: 4vh;
       margin: 10px 15px;
       vertical-align: middle;
   }
   
   .footer-distributed .footer-center i.fa-envelope{
-      font-size: 50px;
-      line-height: 100px;
+      font-size: 2vh;
+      line-height: 4vh;
   }
   
   .footer-distributed .footer-center p{
@@ -722,24 +722,24 @@ section.maternity img:nth-child(2){
   .footer-distributed .footer-center p span{
       display:block;
       font-weight: normal;
-      font-size: 60px;
-      line-height:2;
+      font-size: 2vh;
+      line-height:2vh;
   }
   
  #phno{
-    font-size: 60px;
+    font-size: 2vh;
   }
 
 
   .footer-distributed .footer-center p a{
       color:  lightseagreen;
-      text-decoration: none;;
+      text-decoration: none;
   }
   
   .footer-distributed .footer-links a:before {
     content: "|";
     font-weight:300;
-    font-size: 60px;
+    font-size: 2vh;
     left: 0;
     color: #fff;
     display: inline-block;
@@ -759,7 +759,7 @@ section.maternity img:nth-child(2){
   .footer-distributed .footer-company-about{
       line-height: 100px;
       color:  #92999f;
-      font-size: 50px;
+      font-size: 2vh;
       font-weight: normal;
       margin: 0;
   }
@@ -767,7 +767,7 @@ section.maternity img:nth-child(2){
   .footer-distributed .footer-company-about span{
       display: block;
       color:  #ffffff;
-      font-size: 60px;
+      font-size: 2vh;
       font-weight: bold;
       margin-bottom: 20px;
   }
@@ -778,15 +778,15 @@ section.maternity img:nth-child(2){
   
   .footer-distributed .footer-icons a{
       display: inline-block;
-      width: 100px;
-      height: 100px;
+      width: 4vh;
+      height: 4vh;
       cursor: pointer;
       background-color:  #33383b;
       border-radius: 2px;
-      font-size: 50px;
+      font-size: 2vh;
       color: #ffffff;
       text-align: center;
-      line-height: 100px;
+      line-height: 4vh;
       margin-right: 3px;
       margin-bottom: 5px;
   }
