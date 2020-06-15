@@ -1,426 +1,528 @@
 /* MOBILE VERSION */
 @media screen and (max-width: 900px) {
-     body {
-        width: 100%;
+      
+   body {
+    width: 100%;
         height: auto;
-        overflow-x:hidden;
-        overflow: hidden;
+       overflow-x:hidden;
+       overflow: hidden;
+   }
+
+   html{
+       overflow-x: hidden;
+   }
+
+   
+   .logo{
+       cursor: pointer;
+       position: absolute;
+       top: 0px;
+       max-width: 150px;
+       z-index: 3;
+   }
+
+   .nav_links{
+       background-color: #F6F6F3;
+       padding: 0%;
+       width: 100%;
+       height: 100%;
+       margin: 0%;
+       position: absolute;
+       display: none;
+       flex-direction: column;
+       text-align: center;
+       justify-content: center;
+       z-index: 1;
+       right: 0%;
+       top: 0%;
+       opacity: 0.8;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+
+   .nav_links li, .home, .work, .about, .contactus{
+       color: black;
+       text-decoration: none;
+       font-size: 150%;
+   }
+
+   .burger{
+       display: block;
+       position: absolute;
+       right:2%;
+       top: 2%;
+       z-index: 2;
+   }
+
+   .burger:hover>div {
+       background-color: white;
+   }
+
+   .nav-active{
+       transform: translateX(0%);
+   }
+
+   .cross{
+       display:none;
+       position: absolute;
+       right:2%;
+       top: 1%;
+       z-index: 2;
+       color: black;
+       cursor: pointer;
+   }
+
+   .navi{
+       position: static;
+       background-color: none;
+       height: 0vh;
+       width: 0%;
+       z-index: 10;
+   }
+
+   .workcontent a{
+   
+       color: black;
+       display: flex;
+       justify-content: center;
+       font-size: 100%;
+       justify-content: space-around;
+   }
+
+   .workcontent{
+       position: absolute;
+       right: 10%;
+       top: 10%;
+       z-index: 5;
+       background-color: #F6F6F3;
+       box-shadow: none;
     }
 
-    html{
-        overflow-x: hidden;
-    }
+  /* who page  */
+   .who{
+       display: block;
+   }
 
+   #who_btn{
+       margin-left: -5%;
+   }
+
+       
+   .who img{
+       grid-column: 1/3;
+       width: 100vw;
+       height: auto;
+       padding: 10%;
+   }
+
+   /* second page */
+   .prewedding{
+       display: flex;
+       flex-direction: column;
+       background-color: white;
+       padding: 0px;
+   }
+
+   .prewedding img{
+       padding: 0px;
+       object-fit: fill;
+   }
+
+   .pre_img1{
+       max-width: 100%;
+       height: auto;
+       grid-column: 1;
+       padding: 2em;
+       grid-row: 1/ span 3;
+   }
+
+
+   /* third-page */
+   
+   .wedding{
+       display: block;
+       padding: 0%;
+   }
+
+   .wed_text{
+       justify-content: center;
+       text-align: center;
+       padding: 0px;
+       margin: 0px
+   }
+   
+   .wedding img{
+       height: auto;
+       width: 100%;
+       padding-left: 0%;
+       padding-top: 2%;
+       padding-right: 0px;
+       margin-right: 0%;
+   }
+
+   #pre_2{
+       transform: translateX(60%);
+   }
+
+   section.wedding img:nth-child(1){
+       height: auto;
+       width: 100%;
+       padding-left: 0%;
+       padding-right: 0%;
+       padding-top: 2%;
+       margin-right: 0%;
+   }
+   
+   section.wedding img:nth-child(3){
+       height: auto;
+       width: 100%;
+       padding-left: 0%;
+       padding-top: 0%;
+       margin-right: 0%;
+       padding-right: 0%;
+   }
+
+   /* maternity */
+
+   .maternity{
+       display: block;
+       padding-bottom: 10vh;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       justify-content: center;
+       padding: 0;
+   }
+
+   .mat_text{
+       grid-column: 2;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       padding-right: 10%;
+       grid-column: 2;
+       font-size: 3vh;
+       background-color: #F6F6F3;
+       padding-left: 10%;
+   }
+       
+   section.maternity img:nth-child(1){
+       height: auto;
+       width: 100%;
+       padding-left: 0%;
+       padding-top: 2%;
+       margin-right: 0%;
+   }
+
+   section.maternity img:nth-child(2){
+       width: 100%;
+       height: auto;
+       padding-right: 0%;
+       margin-top: 20px;
+       grid-column: 3;
+       grid-row: 1;
+   }
+   
+   #mat_2{
+      transform: translateX(50%);
+   }
+
+
+   /* banner */
+   .banner-container{
+       display: flex;
+       flex-direction: column;
+       height: auto;
+       justify-content: center; 
+       align-items: center;
+   }
+
+   .banner{
+       display: flex;
+       flex-direction: column;
+       height: auto;
+       width: 100%; 
+   }
+       
+   .logo_banner img{
+       display: none;
+   }
+
+   #logobanner{
+       display: none;
+   }
+
+   .banner1 h1{
+       color: white;
+       font-family: 'Caveat', cursive;
+       font-size: 3vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+   }
+
+   .banner1 p{
+       color: white;
+       font-family: 'Playfair Display SC', serif;
+       font-size: 3vh;
+       letter-spacing: 1vh;
+       text-align: start;
+   }
+
+   .banner2 h2{
+       color: black;
+       font-family: 'Playfair Display SC', serif;
+       font-size: 3vh;
+       display: flex;
+       flex-direction: column;
+       letter-spacing: 1vh;
+       justify-content: center;
+       text-align: center;
+       margin-top: -10vh;
+   }
+       
+   .banner1{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+       padding: 0px;
+       margin-bottom: 0%;
+       margin-top: -30%;
+   }
+
+   .banner2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       margin-bottom: 0px;
+       padding-top: 100px;
+   }
+
+   .divide1{
+       display: none;
+   }
+
+   .divide2{
+       display: none; 
+   }
+
+   #ban_2{
+       text-align: center;
+       transform: translateX(40%);
+       margin-top: 10px;
+       margin-bottom: 30px;
+   }
+   
+   /* instagram */
+       
+   .swiper2{
+       width: 100vw;
+       height: 20vh;
+       margin-bottom: -15vh;
+   }
+
+   /* footer */
+  
+	
+.foot-contain{
+    grid-area: footer;
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  
+  .footer-distributed{
+      background: #666;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      box-sizing: border-box;
+      width: 100%;
+      text-align: left;
+      font: bold 16px sans-serif;
+      padding: 55px 50px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+      display: inline-block;
+      vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left{
+      width: 40%;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed h3{
+      color:  #ffffff;
+      font: normal 36px 'Open Sans', cursive;
+      margin: 0;
+  }
+  
+  .footer-distributed h3 span{
+      color:  lightseagreen;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links{
+      color:  #ffffff;
+      margin: 20px 0 12px;
+      padding: 0;
+  }
     
-    .logo{
-        cursor: pointer;
-        position: absolute;
-        top: 0px;
-        max-width: 150px;
-        z-index: 3;
-    }
-
-    .nav_links{
-        background-color: #F6F6F3;
-        padding: 0%;
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        position: absolute;
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        z-index: 1;
-        right: 0%;
-        top: 0%;
-        opacity: 0.8;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav_links li, .home, .work, .about, .contactus{
-        color: black;
-        text-decoration: none;
-        font-size: 150%;
-    }
-
-    .burger{
-        display: block;
-        position: absolute;
-        right:2%;
-        top: 2%;
-        z-index: 2;
-    }
-
-    .burger:hover>div {
-        background-color: white;
-    }
-
-    .nav-active{
-        transform: translateX(0%);
-    }
-
-    .cross{
-        display:none;
-        position: absolute;
-        right:2%;
-        top: 1%;
-        z-index: 2;
-        color: black;
-        cursor: pointer;
-    }
-
-    .navi{
-        position: static;
-        background-color: none;
-        height: 0vh;
-        width: 0%;
-        z-index: 10;
-    }
-
-    .workcontent a{
-    
-        color: black;
-        display: flex;
-        justify-content: center;
-        font-size: 100%;
-        justify-content: space-around;
-    }
-
-    .workcontent{
-        position: absolute;
-        right: 10%;
-        top: 10%;
-        z-index: 5;
-        background-color: #F6F6F3;
-        box-shadow: none;
-     }
-
-   /* who page  */
-    .who{
-        display: block;
-    }
-
-    #who_btn{
-        margin-left: 10%;
-    }
-
-        
-    .who img{
-        grid-column: 1/3;
-        width: 100vw;
-        height: auto;
-        padding: 10%;
-    }
-
-    /* second page */
-    .prewedding{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        padding: 0px;
-    }
-
-    .prewedding img{
-        padding: 0px;
-        object-fit: fill;
-    }
-
-    .pre_img1{
-        max-width: 100%;
-        height: auto;
-        grid-column: 1;
-        padding: 2em;
-        grid-row: 1/ span 3;
-    }
-
-
-    /* third-page */
-    
-    .wedding{
-        display: block;
-        padding: 0%;
-    }
-
-    .wed_text{
-        justify-content: center;
-        text-align: center;
-        padding: 0px;
-        margin: 0px
-    }
-    
-    .wedding img{
-        height: auto;
-        width: 100%;
-        padding-left: 0%;
-        padding-top: 2%;
-        padding-right: 0px;
-        margin-right: 0%;
-    }
-
-    #pre_2{
-        transform: translateX(50%);
-    }
-
-    section.wedding img:nth-child(1){
-        height: auto;
-        width: 100%;
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-top: 2%;
-        margin-right: 0%;
-    }
-    
-    section.wedding img:nth-child(3){
-        height: auto;
-        width: 100%;
-        padding-left: 0%;
-        padding-top: 0%;
-        margin-right: 0%;
-        padding-right: 0%;
-    }
-
-    /* maternity */
-
-    .maternity{
-        display: block;
-        padding-bottom: 10vh;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .mat_text{
-        grid-column: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding-right: 10%;
-        grid-column: 2;
-        font-size: 3vh;
-        background-color: #F6F6F3;
-        padding-left: 10%;
-    }
-        
-    section.maternity img:nth-child(1){
-        height: auto;
-        width: 100%;
-        padding-left: 0%;
-        padding-top: 2%;
-        margin-right: 0%;
-    }
-
-    section.maternity img:nth-child(2){
-        width: 100%;
-        height: auto;
-        padding-right: 0%;
-        margin-top: 20px;
-        grid-column: 3;
-        grid-row: 1;
-    }
-    
-    #mat_2{
-       transform: translateX(50%);
-    }
-
-
-    /* banner */
-    .banner-container{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: center; 
-        align-items: center;
-    }
-
-    .banner{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        width: 100%; 
-    }
-        
-    .logo_banner img{
-        display: none;
-    }
-
-    #logobanner{
-        display: none;
-    }
-
-    .banner1 h1{
-        color: white;
-        font-family: 'Caveat', cursive;
-        font-size: 3vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .banner1 p{
-        color: white;
-        font-family: 'Playfair Display SC', serif;
-        font-size: 3vh;
-        letter-spacing: 1vh;
-        text-align: start;
-    }
-
-    .banner2 h2{
-        color: black;
-        font-family: 'Playfair Display SC', serif;
-        font-size: 3vh;
-        display: flex;
-        flex-direction: column;
-        letter-spacing: 1vh;
-        justify-content: center;
-        text-align: center;
-        margin-top: -10vh;
-    }
-        
-    .banner1{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        padding: 0px;
-        margin-bottom: 0%;
-        margin-top: -30%;
-    }
-
-    .banner2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 0px;
-        padding-top: 100px;
-    }
-
-    .divide1{
-        display: none;
-    }
-
-    .divide2{
-        display: none; 
-    }
-
-    #ban_2{
-        text-align: center;
-        transform: translateX(40%);
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-    
-    /* instagram */
-        
-    .swiper2{
-        width: 100vw;
-        height: 20vh;
-        margin-bottom: -15vh;
-    }
-
-    /* footer */
-    footer{
-        width: 100vw;
-        height: 100vh;
-        grid-area: footer;
-    }
-    
-    .footer-content{
-        background-color: #5f5f5f ;
-        height: 100vh;
-        width: 100vw;
-        padding-top: 0px;
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(to right top, #f9f6f1, #fbf2ef, #fceff0, #f8edf5, #eeecf9);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-blend-mode: difference; 
-    }
-    
-    .block{
-        border: 1px solid white;
-        width: 100vw;
-        margin: 10px 0px 10px;
-    }
-    
-    .links_loc{
-        text-align: center;
-        font-size: 1vw;
-        padding-top: 0vh;
-        font-family: 'Playfair Display SC', serif;
-        color: white; 
-        letter-spacing: 3px;
-        padding-right: 0px;
-    }
-
-    .links_loc h1{
-        font-size: 3vh;
-        letter-spacing: 2vw;
-    }
-    
-    .links_loc h2{
-        padding: 0px;
-        font-size: 3vh;
-    }
-    
-    .links_loc ul{
-        list-style-type: none;
-    }
-    
-    .links_loc a img{
-        padding-top: 1vh;
-        width: 5vw;
-        padding-bottom: 2vh;
-    }
-    
-    .mid_sec{
-        display: none;
-    }
-    
-    .mid_sec ul{
-        list-style-type: none;
-    }
-    
-    
-    #wrkc{
-      padding: 20px;
-    }
-    
-    .mid_sec img{
-        display: none;
-        text-align: center;
-        list-style-type: none;
-        width: 53vw;
-    }
-    
-    .about_end{
-        display: flex;
-        flex-direction: column;
-        color: white;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        font-size: 1vw;
-        opacity: 1;
-        padding: 0vw;
-        padding-bottom: 2px;
-        font-family: 'Playfair Display SC', serif;
-        color: white; 
-        letter-spacing: 3px;
-        transform: translateX(0vw);
-    }
-    
-    .fotlink a img{
-        height: 5vh;
-    }
-    .about_end h2{
-        padding: 1vh;
-    }
+ #phno{
+    font-size: 14px;
+  }
+  .footer-distributed .footer-links a{
+      display:inline-block;
+      line-height: 1.8;
+    font-weight:400;
+      text-decoration: none;
+      color:  inherit;
+  }
+  
+  .footer-distributed .footer-company-name{
+      color:  #222;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center{
+      width: 35%;
+  }
+  
+  .footer-distributed .footer-center i{
+      background-color:  #33383b;
+      color: #ffffff;
+      font-size: 25px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope{
+      font-size: 17px;
+      line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p{
+      display: inline-block;
+      color: #ffffff;
+    font-weight:400;
+      vertical-align: middle;
+      margin:0;
+  }
+  
+  .footer-distributed .footer-center p span{
+      display:block;
+      font-weight: normal;
+      font-size:14px;
+      line-height:2;
+  }
+  
+  .footer-distributed .footer-center p a{
+      color:  lightseagreen;
+      text-decoration: none;;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right{
+      width: 20%;
+  }
+  
+  .footer-distributed .footer-company-about{
+      line-height: 20px;
+      color:  #92999f;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span{
+      display: block;
+      color:  #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons{
+      margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a{
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      background-color:  #33383b;
+      border-radius: 2px;
+  
+      font-size: 20px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 35px;
+  
+      margin-right: 3px;
+      margin-bottom: 5px;
+  }
+  
+  /* If you don't want the footer to be responsive, remove these media queries */
+  
+  @media (max-width: 880px) {
+  
+      .footer-distributed{
+          font: bold 14px sans-serif;
+      }
+  
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right{
+          display: block;
+          width: 100%;
+          margin-bottom: 40px;
+          text-align: center;
+      }
+  
+      .footer-distributed .footer-center i{
+          margin-left: 0;
+      }
+  
+  }
+  
 }
