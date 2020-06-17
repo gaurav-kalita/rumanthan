@@ -139,6 +139,17 @@ header{
     box-shadow: 9px 0px 10px -12px rgba(0,0,0,0.73);
 }
 
+.work{ 
+    cursor: pointer;
+}
+
+.workcontent-display{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    color: white;
+}
+
 .workcontent a{
     position: relative;
 }

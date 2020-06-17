@@ -24,8 +24,6 @@ var swiper1 = new Swiper('.swiper1', {
 
     var header = document.querySelector(".navi");
     var links = document.querySelectorAll('.home, .work,.about,.contactus,.workcontent li,.workcontent a');
-    console.log(links);
-    // var workli = document.querySelectorAll('.workli');
     var log = document.querySelector(".logo")
 
     header.classList.toggle("navi-active", window.scrollY > 300);
@@ -45,13 +43,23 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav_links');  
 const cross =  document.querySelector('.cross');
 const logo =  document.querySelector('.logo'); 
+const workcontent =  document.querySelector('.workcontent'); 
 
 // media query to stop auto opening of navbar
+
 var x = window.matchMedia("(max-width: 900px)")
 if(x.matches){
 (function() {
     nav.style.display = "none";
 })()};
+
+window.addEventListener("scroll", function(){
+  if(menuopen){
+      burger.style.display = 'block';
+      cross.style.display = "none";
+      menuopen = false;
+      nav.classList.toggle("nav-active", window.scrollY > 300);
+  }})
 
 
 //toggle the hamburger menu
@@ -79,7 +87,10 @@ cross.addEventListener('click', ()=>{
     menuopen = true;
     }
 });
-
+workcontent.addEventListener('click', ()=>{
+  // workcontent.classList.toggle('workcontent-display')
+  return false;
+})
 // swiper for the instagram images
 
 var swiper2 = new Swiper('.swiper2', {

@@ -80,13 +80,12 @@
        z-index: 10;
    }
 
-   .workcontent a{
-   
+   .workli li a{
        color: black;
        display: flex;
+       flex-direction: column;
        justify-content: center;
        font-size: 100%;
-       justify-content: space-around;
    }
 
    .workcontent{
@@ -236,6 +235,9 @@
        height: auto;
        justify-content: center; 
        align-items: center;
+       vertical-align: start;
+       padding: 0;
+       margin: 0;
    }
 
    .banner{
@@ -243,6 +245,8 @@
        flex-direction: column;
        height: auto;
        width: 100%; 
+       padding: 0;
+       margin: 0;
    }
        
    .logo_banner img{
@@ -260,7 +264,8 @@
        display: flex;
        justify-content: center;
        align-items: center;
-       
+       margin: 0px;
+       padding: 0;
    }
 
    .banner1 p{
@@ -269,20 +274,24 @@
        font-size: 3vh;
        letter-spacing: 1vh;
        text-align: start;
-       padding-top: 6vh;
+       padding: 0vh;
    }
-
-   .banner2 h2{
-       color: black;
-       font-family: 'Playfair Display SC', serif;
-       font-size: 3vh;
+   .banner2{
+    display: flex;
+    margin: 0vh;
+       padding: 0vh;
        display: flex;
        flex-direction: column;
+   }
+   .banner2 h2{
+       color: black;
+       background-color: red;
+       font-family: 'Playfair Display SC', serif;
+       font-size: 3vh;
        letter-spacing: 1vh;
-       justify-content: center;
+       vertical-align: center;
        text-align: center;
-       margin-top: -10vh;
-       padding: 10px;
+       
    }
        
    .banner1{
@@ -290,10 +299,11 @@
        justify-content: center;
        flex-direction: column;
        text-align: center;
+    align-items: end;
        padding: 0px;
        margin-bottom: 0%;
        margin-top: -30%;
-       
+       background-color: blue;
    }
 
    .banner2{
