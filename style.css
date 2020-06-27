@@ -631,7 +631,7 @@ section.maternity img:nth-child(2){
     text-align: center;
     font-size: 50px;
     font-weight: 700;
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   .footer-distributed{
@@ -768,6 +768,7 @@ section.maternity img:nth-child(2){
       font-size: 2vh;
       font-weight: normal;
       margin: 0;
+      text-decoration: underline;
   }
   
   .footer-distributed .footer-company-about span{

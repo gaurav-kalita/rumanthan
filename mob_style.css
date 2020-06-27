@@ -291,14 +291,13 @@
    }
    
    #mat_2{
-      transform: translateX(50%);
+      transform: translateX(20vw);
    }
 
 
    /* banner */
    .banner-container{
-       display: block;
-       
+       display: block;   
    }
 
    .banner{
@@ -317,6 +316,7 @@
    .banner-container{
     padding: 1em;
    }
+
    .logo_banner{
        display: none;
    }
@@ -341,8 +341,7 @@
        font-family: 'Playfair Display SC', serif;
        font-size: 3vh;
        letter-spacing: 1vh;
-       text-align: center;
-       
+       text-align: center; 
    }
 
    .banner2 h2{
@@ -352,7 +351,6 @@
        letter-spacing: 1vh;
        vertical-align: center;
        text-align: center;
-       
    }
        
    .banner1{
@@ -398,11 +396,13 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .footer-distributed .footer-center{
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
 #phno{
