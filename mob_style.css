@@ -165,8 +165,11 @@
         padding-top: 2em;
         text-align: left;
     }
+
     #who_btn{
-        margin-top: 2em;
+        margin-top: 1em;
+        padding: 0.4em;
+        transform: translateX(60vw);
     }
   
    /* second page */
@@ -214,6 +217,7 @@
         padding: 0.4em;
         margin-top: 0.2em;
         margin-left: 1.4em;
+        transform: translateX(60vw);
     }
 
    /* third-page */
@@ -239,8 +243,9 @@
    }
 
    #pre_2{
-       transform: translateX(0%);
-       padding: 0.3em;
+       transform: translateX(60vw);
+       padding: 0.4em;
+       margin: inherit;
    }
 
    section.wedding img:nth-child(1){
@@ -296,8 +301,10 @@
    }
    
    #mat_2{
-      transform: translateX(20vw);
-   }
+      transform: translateX(70vw);
+      padding: 0.4em;
+      margin: 0;
+    }
 
 
    /* banner */
