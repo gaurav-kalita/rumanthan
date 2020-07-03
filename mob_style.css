@@ -169,6 +169,7 @@
     #who_btn{
         margin-top: 1em;
         padding: 0.4em;
+        margin-left: 1.2em;
         transform: translateX(0vw);
     }
   
@@ -216,7 +217,7 @@
     #pre_1{
         padding: 0.4em;
         margin-top: 0.2em;
-        margin-left: 1.4em;
+        margin-left: 1.2em;
         transform: translateX(0vw);
     }
 
@@ -245,7 +246,7 @@
    #pre_2{
        transform: translateX(0vw);
        padding: 0.4em;
-       margin: inherit;
+       margin-left: 1.2em;
    }
 
    section.wedding img:nth-child(1){
@@ -304,6 +305,7 @@
       transform: translateX(0vw);
       padding: 0.4em;
       margin: 0;
+      margin-left: 1.2em;
     }
 
 
