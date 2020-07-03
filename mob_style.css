@@ -169,7 +169,7 @@
     #who_btn{
         margin-top: 1em;
         padding: 0.4em;
-        transform: translateX(60vw);
+        transform: translateX(0vw);
     }
   
    /* second page */
@@ -217,7 +217,7 @@
         padding: 0.4em;
         margin-top: 0.2em;
         margin-left: 1.4em;
-        transform: translateX(60vw);
+        transform: translateX(0vw);
     }
 
    /* third-page */
@@ -243,7 +243,7 @@
    }
 
    #pre_2{
-       transform: translateX(60vw);
+       transform: translateX(0vw);
        padding: 0.4em;
        margin: inherit;
    }
@@ -301,7 +301,7 @@
    }
    
    #mat_2{
-      transform: translateX(70vw);
+      transform: translateX(0vw);
       padding: 0.4em;
       margin: 0;
     }
@@ -367,6 +367,7 @@
        
    .banner1{
        display: block;
+       place-items: center;
    }
 
    .banner2{
@@ -383,8 +384,12 @@
 
    #ban_2{
       text-align: center;
-      transform: translateX(40vw);
       padding: 0.3em;
+      justify-content: center;
+   }
+
+   .letstalk{
+    transform: translateX(43%);  
    }
    
    /* instagram */
