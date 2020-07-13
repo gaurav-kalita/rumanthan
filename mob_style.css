@@ -246,7 +246,7 @@
    #pre_2{
        transform: translateX(0vw);
        padding: 0.4em;
-       margin-left: 2.4em;
+       margin-left: 1em;
    }
 
    section.wedding img:nth-child(1){
@@ -305,7 +305,7 @@
       transform: translateX(0vw);
       padding: 0.4em;
       margin: 0;
-      margin-left: 1.2em;
+      margin-left: 2em;
     }
 
 
